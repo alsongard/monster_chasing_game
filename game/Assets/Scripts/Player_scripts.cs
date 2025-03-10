@@ -36,7 +36,9 @@ public class Player_scripts : MonoBehaviour
     private Animator anim;
     private string  WALK_ANIMATION = "walk";
 
+    private bool isGrounded = true;
 
+    private string GROUND_TAG = "Ground";
 
     private void Awake()
     {
@@ -50,8 +52,6 @@ public class Player_scripts : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // float h = Input.GetAxis("Horizontal");
-        // float v = Input.GetAxis("Vertical");
     }
 
     // Update is called once per frame
@@ -61,6 +61,10 @@ public class Player_scripts : MonoBehaviour
         AnimatePlayer();
     }
 
+    void FixedUpdate()
+    {
+        PlayerJump();   
+    }
 
     public void PlayerMoveKeyBoard()
     {
@@ -86,7 +90,7 @@ public class Player_scripts : MonoBehaviour
         {
             // moving to the left side
             anim.SetBool(WALK_ANIMATION, true);
-            sr.flipX = true;
+            sr.flipX = true; // change face
 
         }
         else 
@@ -96,4 +100,26 @@ public class Player_scripts : MonoBehaviour
             
         }
     }
+    public void PlayerJump()
+    {
+
+       if( Input.GetButtonDown("Jump") && isGrounded)
+       {
+            isGrounded = false;
+            // Debug.Log("character is jumping");
+            myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+       }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag(GROUND_TAG))
+        {
+            Debug.Log("Player landed on Ground");
+            isGrounded = true;
+        }
+    }
+
+
+
 }

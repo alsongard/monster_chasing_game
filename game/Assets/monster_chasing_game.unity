@@ -119,6 +119,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &864053283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3267743265050841307, guid: 751e61582c86baa01b92097d11a35f83, type: 3}
+  m_PrefabInstance: {fileID: 5044839503866848412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &864053289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864053283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10c62e0dcf4d9ad6b3a99ed77f16938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveForce: 10
+  jumpForce: 11
+  myBody: {fileID: 0}
 --- !u!1 &994063658
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3267743265050841307, guid: 751e61582c86baa01b92097d11a35f83, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7071650843287349157, guid: 751e61582c86baa01b92097d11a35f83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -278,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7071650843287349157, guid: 751e61582c86baa01b92097d11a35f83, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.07
+      value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: 7071650843287349157, guid: 751e61582c86baa01b92097d11a35f83, type: 3}
       propertyPath: m_LocalPosition.z
@@ -315,7 +335,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3267743265050841307, guid: 751e61582c86baa01b92097d11a35f83, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 864053289}
   m_SourcePrefab: {fileID: 100100000, guid: 751e61582c86baa01b92097d11a35f83, type: 3}
 --- !u!1001 &5100286904015978309
 PrefabInstance:
@@ -429,6 +452,10 @@ PrefabInstance:
     - target: {fileID: 4123951685828762515, guid: eec833f3f10f97dffb8c31fa59555180, type: 3}
       propertyPath: m_Name
       value: Players_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123951685828762515, guid: eec833f3f10f97dffb8c31fa59555180, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
