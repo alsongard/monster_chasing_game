@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player_scripts : MonoBehaviour
@@ -39,6 +40,8 @@ public class Player_scripts : MonoBehaviour
     private bool isGrounded = true;
 
     private string GROUND_TAG = "Ground";
+
+    private string ENEMY_TAG = "enemy";
 
     private void Awake()
     {
@@ -115,11 +118,23 @@ public class Player_scripts : MonoBehaviour
     {
         if(collision.gameObject.CompareTag(GROUND_TAG))
         {
-            Debug.Log("Player landed on Ground");
+            // Debug.Log("Player landed on Ground");
             isGrounded = true;
+        }
+
+        if(collision.gameObject.CompareTag(ENEMY_TAG))
+        {
+            Destroy(gameObject);
         }
     }
 
-
+    // using isTrigger to check collision
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag(ENEMY_TAG))
+        {
+            Destroy(gameObject);
+        }
+    }
 
 }
