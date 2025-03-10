@@ -20,6 +20,12 @@ public class camerafollow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        if (player == null)
+        {
+            return;
+        }
+
+        
         min_X = -51.75184f;
         max_X = 56.750f;
         tempPos = transform.position;
