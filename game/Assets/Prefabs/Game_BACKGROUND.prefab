@@ -97,10 +97,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2439088024661928462}
   - component: {fileID: 1264157838767582620}
-  m_Layer: 0
+  - component: {fileID: 1705669427452655461}
+  m_Layer: 3
   m_Name: invisibleWall _2
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -113,7 +114,7 @@ Transform:
   m_GameObject: {fileID: 307371948834084512}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 69.5, y: -3.46, z: 0.10080175}
+  m_LocalPosition: {x: 69.96, y: -3.46, z: 0.10080175}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -149,11 +150,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.29861832, y: 1.0927721}
+  m_Offset: {x: -0.29861832, y: 2.3404303}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -163,8 +164,20 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.40276337, y: 3.1855443}
+  m_Size: {x: 0.40276337, y: 5.6808605}
   m_EdgeRadius: 0
+--- !u!114 &1705669427452655461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307371948834084512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f871be622bdef839ca77c0321c9c69b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &375321280766901144
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +191,7 @@ GameObject:
   - component: {fileID: 347420630982429862}
   m_Layer: 0
   m_Name: Ground_0
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,7 +325,7 @@ GameObject:
   - component: {fileID: 1923958683805480028}
   m_Layer: 0
   m_Name: Ground_0 (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,8 +560,8 @@ Transform:
   m_GameObject: {fileID: 808817493950901704}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 79.4, y: -2.8421226, z: 0.0046183392}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 77.9, y: -2.8421226, z: 0.0046183392}
+  m_LocalScale: {x: 0.9911894, y: 0.98344374, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 687206839688639350}
@@ -601,8 +614,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.54, y: 3.02}
+  m_DrawMode: 1
+  m_Size: {x: 1.5, y: 3.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -647,9 +660,9 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 4.5, y: 2.97}
-    newSize: {x: 4.54, y: 3.02}
+    newSize: {x: 1.5, y: 3.02}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 4.54, y: 3.02}
@@ -667,7 +680,7 @@ GameObject:
   - component: {fileID: 3347778301604007190}
   m_Layer: 0
   m_Name: Ground_2 (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -801,7 +814,7 @@ GameObject:
   - component: {fileID: 4255759097638638710}
   m_Layer: 0
   m_Name: Ground_1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1297,8 +1310,8 @@ Transform:
   m_GameObject: {fileID: 1814914463221272536}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.369995, y: -2.8421226, z: 0.0046183392}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -45.997, y: -2.842123, z: 0.0046183392}
+  m_LocalScale: {x: 0.9911894, y: 0.98344374, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 687206839688639350}
@@ -1351,8 +1364,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.54, y: 3.02}
+  m_DrawMode: 1
+  m_Size: {x: 3.83, y: 3.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1397,9 +1410,9 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 4.5, y: 2.97}
-    newSize: {x: 4.54, y: 3.02}
+    newSize: {x: 3.83, y: 3.02}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 4.54, y: 3.02}
@@ -1417,7 +1430,7 @@ GameObject:
   - component: {fileID: 5323431135356476900}
   m_Layer: 0
   m_Name: Ground_0 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1812,7 +1825,7 @@ GameObject:
   - component: {fileID: 1885701180599836470}
   m_Layer: 0
   m_Name: Ground_0 (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2294,7 +2307,7 @@ GameObject:
   - component: {fileID: 3263552445557354571}
   m_Layer: 0
   m_Name: Ground_2 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2602,7 +2615,7 @@ GameObject:
   - component: {fileID: 2963595677795282992}
   m_Layer: 0
   m_Name: Ground_2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2910,7 +2923,7 @@ GameObject:
   - component: {fileID: 657402933552703414}
   m_Layer: 0
   m_Name: Ground_2 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3218,7 +3231,7 @@ GameObject:
   - component: {fileID: 2005447034822772983}
   m_Layer: 0
   m_Name: Ground_1 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3526,7 +3539,7 @@ GameObject:
   - component: {fileID: 1290528239024626798}
   m_Layer: 0
   m_Name: Ground_1 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3747,7 +3760,7 @@ GameObject:
   - component: {fileID: 3841955733398661681}
   m_Layer: 0
   m_Name: Ground_2 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3881,7 +3894,7 @@ GameObject:
   - component: {fileID: 8230238437368257907}
   m_Layer: 0
   m_Name: Ground_2 (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4011,7 +4024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 687206839688639350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4075,7 +4088,7 @@ GameObject:
   - component: {fileID: 4349106169412624389}
   m_Layer: 0
   m_Name: Ground_1 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4296,7 +4309,7 @@ GameObject:
   - component: {fileID: 5926493759231013615}
   m_Layer: 0
   m_Name: Ground_0 (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4427,10 +4440,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7806925355964715787}
   - component: {fileID: 7155750601344174311}
-  m_Layer: 0
+  - component: {fileID: 9011125401884495973}
+  m_Layer: 3
   m_Name: invisibleWall
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4443,7 +4457,7 @@ Transform:
   m_GameObject: {fileID: 5774946686648808142}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -56.63, y: -3.41, z: 0.10080175}
+  m_LocalPosition: {x: -57.28, y: -3.41, z: 0.10080175}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4479,11 +4493,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.21447945, y: 5.6100492}
+  m_Offset: {x: -0.21447945, y: 5.2271566}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4493,8 +4507,20 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5710411, y: 12.2200985}
+  m_Size: {x: 0.5710411, y: 11.454313}
   m_EdgeRadius: 0
+--- !u!114 &9011125401884495973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5774946686648808142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f871be622bdef839ca77c0321c9c69b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6244683108766086793
 GameObject:
   m_ObjectHideFlags: 0
@@ -4595,7 +4621,7 @@ GameObject:
   - component: {fileID: 6066636584260833019}
   m_Layer: 0
   m_Name: Ground_0 (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4729,7 +4755,7 @@ GameObject:
   - component: {fileID: 1734115771715138230}
   m_Layer: 0
   m_Name: Ground_2 (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4863,7 +4889,7 @@ GameObject:
   - component: {fileID: 8556273355845840898}
   m_Layer: 0
   m_Name: Ground_0 (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4997,7 +5023,7 @@ GameObject:
   - component: {fileID: 4664840165121812152}
   m_Layer: 0
   m_Name: Ground_0 (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5305,7 +5331,7 @@ GameObject:
   - component: {fileID: 7677136800084694731}
   m_Layer: 0
   m_Name: Ground_0 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5439,7 +5465,7 @@ GameObject:
   - component: {fileID: 7998988600198254225}
   m_Layer: 0
   m_Name: Ground_0 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5660,7 +5686,7 @@ GameObject:
   - component: {fileID: 1381749916710980832}
   m_Layer: 0
   m_Name: Ground_2 (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5794,7 +5820,7 @@ GameObject:
   - component: {fileID: 555427647865905703}
   m_Layer: 0
   m_Name: Ground_1 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5924,7 +5950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 198473658823364983}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Game_BACKGROUND
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6199,7 +6225,7 @@ GameObject:
   - component: {fileID: 1614038473679435632}
   m_Layer: 0
   m_Name: Ground_1 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6420,7 +6446,7 @@ GameObject:
   - component: {fileID: 4758308907478445578}
   m_Layer: 0
   m_Name: Ground_0 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6641,7 +6667,7 @@ GameObject:
   - component: {fileID: 8018564180480254597}
   m_Layer: 0
   m_Name: Ground_2 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6775,7 +6801,7 @@ GameObject:
   - component: {fileID: 6715468076888379615}
   m_Layer: 0
   m_Name: Ground_2 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
