@@ -133,6 +133,7 @@ public class Player_scripts : MonoBehaviour
     {
         if(collision.gameObject.CompareTag(ENEMY_TAG))
         {
+            Debug.Log("player is dead!!!!");
             Destroy(gameObject);
         }
     }
