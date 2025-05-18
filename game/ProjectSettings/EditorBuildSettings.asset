@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/monster_chasing_game.unity
     guid: 9f26b7bf1867b8b7aaae9136140e11b1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/gameplay.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/MainController.unity
+    guid: c3ca1878ba261681fadc75c9d9ee7ae3
+  - enabled: 1
+    path: Assets/Scenes/monster_game_scene.unity
+    guid: 71b542b59d45c85d8b7305ed8a851a69
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
