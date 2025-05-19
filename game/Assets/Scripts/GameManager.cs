@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     {
         if (scene.name == "monster_game_scene")
         {
-            Debug.Log("playerCharacter : " + playerCharacter);
+            // Debug.Log("playerCharacter : " + playerCharacter);
             Instantiate(playerCharacter[CharIndex]);
         }
     }

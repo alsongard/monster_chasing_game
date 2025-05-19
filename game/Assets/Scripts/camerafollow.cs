@@ -14,7 +14,7 @@ public class camerafollow : MonoBehaviour
     {
         //intialize variables   
         player  = GameObject.FindGameObjectWithTag("Player").transform;
-        Debug.Log("Selected character is : " + GameManager.instance.CharIndex);
+        // Debug.Log("Selected character is : " + GameManager.instance.CharIndex);
 
     }
 
