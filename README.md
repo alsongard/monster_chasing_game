@@ -53,7 +53,8 @@ Developed as part of game development studies with gratitude to:
 
 
 ## Video
-[monster_chasing_game_001.webm](https://github.com/user-attachments/assets/18914723-eba8-423e-8961-208efb501438)
+
+[originality.webm](https://github.com/user-attachments/assets/53ac3282-7e99-4988-b39b-f801cd4eac6c)
 
 
 License 📄
