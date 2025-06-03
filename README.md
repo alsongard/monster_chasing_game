@@ -5,6 +5,8 @@
 
 A 2D platformer game where players evade respawning monsters. Developed in Unity as part of game development learning journey.
 
+![monster_chase_game_snapshot](monster_chase_game_snapshot.png)
+
 ## Game Overview 🕹️
 Control your character to survive endless monster waves!
 
@@ -42,7 +44,7 @@ Controls 🎯
 | Jump |	Space  |
 
 
-Acknowledgements 🎓  
+Acknowledgements 🎓  S
 Developed as part of game development studies with gratitude to:  
 
 * [freeCodeCamp](https://youtu.be/gB1F9G0JXOo?si=aOPV8tLQn9NVXTqq) for educational resources
